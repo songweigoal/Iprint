@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Iprint</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- Common Strings -->
+    <string name="done">Done</string>
+    <string name="Back">Back</string>
+    <string name="Image">image</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="wifi">Wifi: </string>
+    <string name="next">Next</string>
+    <string name="printphotos">Prints\n@ My Store</string>   
+    <string name="quickbook_title">Simple Picture Books\n@ My Store</string>
+    <string name="viewtaggedset">View selected,\nThen send</string>
+    <string name="mainMenuVersion">Version </string>
+    <string name="albums">Albums</string>
+    <string name="selected">Selected</string>
+    <string name="losework">Are you sure? You will lose all your work.</string>
+</resources>

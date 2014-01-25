@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigationbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navigationbarbackground"
+    android:minHeight="@dimen/head_min_height" 
+    android:minWidth="@dimen/head_min_width">
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_button"
+        android:minHeight="@dimen/head_min_height"
+        android:text="@string/next" 
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/head_min_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/Image"
+        android:src="@drawable/logokodaksmall" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_button"
+        android:minHeight="@dimen/head_min_height"
+        android:minWidth="@dimen/head_min_width"
+        android:text="@string/Back"
+        android:textColor="@color/btn_text"
+        android:visibility="gone"/>
+	
+    
+    <LinearLayout
+        android:id="@+id/album_tex_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/back_btn"
+        android:layout_alignTop="@+id/back_btn"
+        android:layout_toLeftOf="@+id/next_btn"
+        android:layout_toRightOf="@+id/back_btn"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/albums_sum_tex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:gravity="center"
+            android:text="@string/albums"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/item_text"
+            android:ellipsize="middle"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/totalSelected_tex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/selected"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/yellow"/>
+    </LinearLayout>
+</RelativeLayout>

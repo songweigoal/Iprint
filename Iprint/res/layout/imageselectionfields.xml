@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <merge xmlns:android="http://schemas.android.com/apk/res/android"> -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/LinearLayout01" android:orientation="horizontal"
+	android:background="@drawable/fieldsbackground" >
+
+	<GridView
+	    android:id="@+id/picturesGrid"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_weight="3"
+	    android:background="#00000000"
+	    android:cacheColorHint="#00000000"
+	    android:columnWidth="@dimen/image_thumbnail_size"
+	    android:fastScrollEnabled="false"
+	    android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+	    android:numColumns="auto_fit"
+	    android:scrollbarDefaultDelayBeforeFade="500"
+	    android:scrollbarStyle="outsideOverlay"
+	    android:scrollbarThumbVertical="@drawable/scrollbarvertical"
+	    android:smoothScrollbar="true"
+	    android:stretchMode="columnWidth"
+	    android:verticalSpacing="@dimen/image_thumbnail_spacing" />
+
+	<Gallery android:id="@+id/picturesGallery"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:layout_weight="3" 
+		android:background="#00000000"
+		android:cacheColorHint="#00000000"
+		android:visibility="gone" 
+		android:smoothScrollbar="true"
+		android:gravity="center" 
+		android:scrollX="30dp"
+		android:scrollbars="horizontal"
+		android:scrollbarThumbHorizontal="@drawable/scrollbarhorizontalthumb" 
+		android:fadeScrollbars="false"
+		android:scrollbarTrackHorizontal="@drawable/scrollbarhorizontal"></Gallery>
+</LinearLayout>
+<!-- </merge> -->

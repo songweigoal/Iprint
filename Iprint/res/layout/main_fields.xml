@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/main_prints_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="37dp"
+            android:layout_marginTop="25dp"
+            android:minHeight="145dp"
+            android:minWidth="145dp"
+            android:src="@drawable/printsscreen32" />
+
+        <TextView
+            android:id="@+id/main_prints_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/main_prints_img"
+            android:layout_alignRight="@+id/main_prints_img"
+            android:layout_below="@+id/main_prints_img"
+            android:layout_marginTop="5dp"
+            android:gravity="center|top"
+            android:text="@string/printphotos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/yellow"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_quickBookItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/main_quickbook_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="37dp"
+            android:layout_marginTop="25dp"
+            android:minHeight="145dp"
+            android:minWidth="145dp"
+            android:src="@drawable/mobile_photo_book_6x8_v1" />
+
+        <TextView
+            android:id="@+id/main_quickbook_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/main_quickbook_img"
+            android:layout_alignRight="@+id/main_quickbook_img"
+            android:layout_below="@+id/main_quickbook_img"
+            android:layout_marginTop="5dp"
+            android:gravity="center|top"
+            android:text="@string/quickbook_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/yellow"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/main_connect_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/Image"
+            android:minHeight="145dp"
+            android:minWidth="145dp"
+            android:src="@drawable/g4xl_wifi" />
+
+        <TextView
+            android:id="@+id/main_connect_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/main_connect_img"
+            android:layout_alignRight="@+id/main_connect_img"
+            android:layout_below="@+id/main_connect_img"
+            android:layout_marginTop="5dp"
+            android:gravity="center|top"
+            android:text="@string/viewtaggedset"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/yellow"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>
