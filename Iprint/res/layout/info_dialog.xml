@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.65"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#0080b1" >
+
+        <TextView
+            android:id="@+id/info_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="11dp"
+            android:textColor="#fff"
+            android:textSize="18dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/info_dialog_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout1"
+            android:textColor="#fff"
+            android:textSize="18dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_margin="20dp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+
+            <Button
+                android:id="@+id/info_dialog_help_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/large_back_button"
+                android:minHeight="35dp"
+                android:minWidth="135dp"
+                android:textColor="#3c3c3c"
+                android:textSize="14dp" />
+                        
+            <Button
+                android:id="@+id/info_dialog_positive_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/back_button"
+                android:minHeight="35dp"
+                android:minWidth="135dp"
+                android:text="@string/OK"
+                android:textColor="#3c3c3c"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/info_dialog_negative_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/back_button"
+                android:minHeight="35dp"
+                android:minWidth="135dp"
+                android:text="@string/Cancel"
+                android:textColor="#3c3c3c"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/previewIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/info_dialog_title"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/info_dialog_title"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/linearLayout1"
+            android:minHeight="152dp"
+            android:minWidth="152dp"
+            android:maxHeight="152dp"
+            android:maxWidth="152dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/errorTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="E2000"
+            android:textSize="14dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>
