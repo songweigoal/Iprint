@@ -1,4 +1,4 @@
-package com.iprint.app.ui;
+﻿package com.iprint.app.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import com.iprint.app.R;
 /**
  * 应用程序首页
  * 
- * @author song
+ * @author song wei
  * @version 1.0
  * @created 2014-1-21
  */
