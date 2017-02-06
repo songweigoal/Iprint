@@ -15,9 +15,8 @@ import com.iprint.app.R;
 /**
  * 应用程序首页
  * 
- * @author song wei
- * @version 1.0
- * @created 2014-1-21 test1
+
+ * @created 2014-1-21 test2
  */
 public class MainActivity extends BaseActivity {
 	private Button settings_btn;
