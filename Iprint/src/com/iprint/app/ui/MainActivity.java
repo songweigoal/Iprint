@@ -17,7 +17,7 @@ import com.iprint.app.R;
  * 
  * @author song wei
  * @version 1.0
- * @created 2014-1-21
+ * @created 2014-1-21 song2
  */
 public class MainActivity extends BaseActivity {
 	private Button settings_btn;
